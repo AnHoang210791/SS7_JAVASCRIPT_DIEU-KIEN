@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh So Ngay</title>
+</head>
+<body>
+<p>Kiểm tra số ngày trong tháng</p>
+<form onsubmit="tinhSongay(event)">
+    <input id="thang" type="number" min="1" max="12" placeholder="Nhập tháng" style="width: 100px"/>
+    <button type="submit">Tính Số Ngày</button>
+    <p id="result">Đây là chỗ hiển thị kết quả</p>
+    <script>
+        function tinhSongay(e) {
+            e.preventDefault();
+            let month= document.getElementById("thang").value;
+            console.log(month);
+            switch (month){
+                case month="1":
+                    document.getElementById("result").innerHTML="Tháng "+month+" có 31 ngày"
+                    break;
+                case month="2":
+                    document.getElementById("result").innerHTML="Tháng "+month+" có 28 hoặc 29 ngày"
+                    break;
+                case month="3":
+                    document.getElementById("result").innerHTML="Tháng "+month+" có 31 ngày"
+                    break;
+                case month="4":
+                    document.getElementById("result").innerHTML="Tháng "+month+" có 30 ngày"
+                    break;
+                case month="5":
+                    document.getElementById("result").innerHTML="Tháng "+month+" có 31 ngày"
+                    break;
+                case month="6":
+                    document.getElementById("result").innerHTML="Tháng "+month+" có 30 ngày"
+                    break;
+                case month="7":
+                    document.getElementById("result").innerHTML="Tháng "+month+" có 31 ngày"
+                    break;
+                case month="8":
+                    document.getElementById("result").innerHTML="Tháng "+month+" có 31 ngày"
+                    break;
+                case month="9":
+                    document.getElementById("result").innerHTML="Tháng "+month+" có 30 ngày"
+                    break;
+                case month="10":
+                    document.getElementById("result").innerHTML="Tháng "+month+" có 31 ngày"
+                    break;
+                case month="11":
+                    document.getElementById("result").innerHTML="Tháng "+month+" có 30 ngày"
+                    break;
+                case month="12":
+                    document.getElementById("result").innerHTML="Tháng "+month+" có 31 ngày"
+                    break;
+
+
+
+            }
+
+        }
+    </script>
+
+</form>
+</body>
+</html>
